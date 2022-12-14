@@ -12,9 +12,11 @@ import {
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
+import { AuthContext } from "../../context/authContext";
 
 const Navbar = () => {
   const { toggle, darkMode } = useContext(DarkModeContext);
+  const { currentUser } = useContext(AuthContext);
 
   return (
     <div className="navbar">
@@ -24,9 +26,9 @@ const Navbar = () => {
         </Link>
         <HomeOutlined />
         {darkMode ? (
-          <WbSunnyOutlined onClick={toggle} />
+          <WbSunnyOutlined className="darkModeIcon" onClick={toggle} />
         ) : (
-          <DarkModeOutlined onClick={toggle} />
+          <DarkModeOutlined className="darkModeIcon" onClick={toggle} />
         )}
         <GridViewOutlined />
         <div className="search">
@@ -39,11 +41,8 @@ const Navbar = () => {
         <EmailOutlined />
         <NotificationsOutlined />
         <div className="user">
-          <img
-            src="https://s3.envato.com/files/247731702/MAS_1112.jpg"
-            alt="Profile"
-          />
-          <span>Harun</span>
+          <img src={currentUser.profilePic} alt={currentUser.name} />
+          <span>{currentUser.name}</span>
         </div>
       </div>
     </div>
