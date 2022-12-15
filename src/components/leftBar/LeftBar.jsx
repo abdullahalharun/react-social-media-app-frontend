@@ -2,13 +2,9 @@ import "./leftBar.scss";
 import Diversity3OutlinedIcon from "@mui/icons-material/Diversity3Outlined";
 import {
   GroupOutlined,
-  MemoryOutlined,
-  MovieOutlined,
   OndemandVideoOutlined,
   StoreOutlined,
   TimerOutlined,
-  Watch,
-  WatchOutlined,
 } from "@mui/icons-material";
 
 const LeftBar = () => {
@@ -24,23 +20,23 @@ const LeftBar = () => {
             <span>Harun</span>
           </div>
           <div className="item">
-            <GroupOutlined />
+            <GroupOutlined className="icon" />
             <span>Friends</span>
           </div>
           <div className="item">
-            <Diversity3OutlinedIcon />
+            <Diversity3OutlinedIcon className="icon" />
             <span>Group</span>
           </div>
           <div className="item">
-            <StoreOutlined />
+            <StoreOutlined className="icon" />
             <span>MarketPlace</span>
           </div>
           <div className="item">
-            <OndemandVideoOutlined />
+            <OndemandVideoOutlined className="icon" />
             <span>Watch</span>
           </div>
           <div className="item">
-            <TimerOutlined />
+            <TimerOutlined className="icon" />
             <span>Memories</span>
           </div>
         </div>
@@ -48,19 +44,19 @@ const LeftBar = () => {
         <div className="menu">
           <span>Your shortcuts</span>
           <div className="item">
-            <GroupOutlined />
+            <GroupOutlined className="icon" />
             <span>Friends</span>
           </div>
           <div className="item">
-            <Diversity3OutlinedIcon />
+            <Diversity3OutlinedIcon className="icon" />
             <span>Group</span>
           </div>
           <div className="item">
-            <StoreOutlined />
+            <StoreOutlined className="icon" />
             <span>MarketPlace</span>
           </div>
           <div className="item">
-            <OndemandVideoOutlined />
+            <OndemandVideoOutlined className="icon" />
             <span>Watch</span>
           </div>
         </div>
@@ -68,19 +64,19 @@ const LeftBar = () => {
         <div className="menu">
           <span>Others</span>
           <div className="item">
-            <GroupOutlined />
+            <GroupOutlined className="icon" />
             <span>Friends</span>
           </div>
           <div className="item">
-            <Diversity3OutlinedIcon />
+            <Diversity3OutlinedIcon className="icon" />
             <span>Group</span>
           </div>
           <div className="item">
-            <StoreOutlined />
+            <StoreOutlined className="icon" />
             <span>MarketPlace</span>
           </div>
           <div className="item">
-            <OndemandVideoOutlined />
+            <OndemandVideoOutlined className="icon" />
             <span>Watch</span>
           </div>
         </div>

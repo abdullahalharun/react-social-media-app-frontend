@@ -22,7 +22,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="left">
         <Link to="/">
-          <span>Fleet Social</span>
+          <span className="logo">Fleet Social</span>
         </Link>
         <HomeOutlined />
         {darkMode ? (

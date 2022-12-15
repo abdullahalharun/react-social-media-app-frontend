@@ -1,3 +1,4 @@
+import "./post.scss";
 import {
   FavoriteBorderOutlined,
   FavoriteOutlined,
@@ -8,7 +9,6 @@ import {
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Comments from "../comments/Comments";
-import "./post.scss";
 
 const Post = ({ post }) => {
   const [commentOpen, setCommentOpen] = useState(false);
@@ -43,8 +43,7 @@ const Post = ({ post }) => {
             12 Likes
           </div>
           <div className="item" onClick={() => setCommentOpen(!commentOpen)}>
-            <TextsmsOutlined />
-            12 Comments
+            <TextsmsOutlined />2 Comments
           </div>
           <div className="item">
             <ShareOutlined />

@@ -4,11 +4,12 @@
     @include themify($themes){
 
         box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
-                -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
-                -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
-                border-radius: 20px;
-                background-color: themed("bg");
-                color: themed("textColor");
+        -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
+        -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
+        border-radius: 20px;
+        background-color: themed("bg");
+        color: themed("textColor");
+        
         .container{
             padding: 20px;
     
